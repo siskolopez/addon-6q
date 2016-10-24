@@ -58,29 +58,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.pulsar" name="Pulsar" version="0.7.1" provider-name="steeve, i96751414">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="navigation.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="startup"/>
-    <extension point="xbmc.python.module" library="resources/site-packages" />
-    <extension point="xbmc.subtitle.module" library="navigation.py" />
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <language>en</language>
-        <website><![CDATA[https://github.com/i96751414/plugin.video.pulsar]]></website>
-        <forum><![CDATA[http://forum.xbmc.org/showthread.php?tid=200957]]></forum>
-        <source><![CDATA[https://github.com/i96751414/plugin.video.pulsar]]></source>
-        <language>en</language>
-        <license><![CDATA[Non commercial. See https://github.com/i96751414/plugin.video.pulsar/blob/master/LICENSE]]></license>
-        <summary><![CDATA[Pulsar: Universal streaming]]></summary>
-        <description><![CDATA[Follow @pulsarhq on Twitter]]> PS: If you install Pulsar not you must have installed Quasar on Kodi / PD: Si instala Pulsar no debe tener instalado Quasar en Kodi</description>
-    </extension>
-</addon>
-
 <addon id="plugin.video.quasar" name="Quasar" version="0.9.35" provider-name="scakemyer">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -127,32 +104,6 @@
     <description>[COLOR lightcyan]Play videos of different sports streaming sites - Last Update [COLOR turquoise]10/10/2016 Thanks to HUBBAB3 Official Update (+ Goldonx fixes )(+Jairox fixes 12/10/2016)(+Dariomo by Only function in Plexus)[/COLOR]- Necessary to Add-ons [BSFX][/COLOR]</description>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.tvalacarta"
-    name="tvalacarta"
-    version="4.0.3"
-    provider-name="tvalacarta">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="es">Televisión a la carta</summary>
-    <description lang="es">Para ver la televisión por Internet, a la carta y desde tu media center</description>
-    <summary lang="en">TV on demand (Spanish)</summary>
-    <description lang="en">Watch on demand spanish TV from your media center</description>
-    <platform>all</platform>
-    <license>GNU GPL v3</license>
-    <forum>http://www.mimediacenter.info/foro</forum>
-    <website>http://blog.tvalacarta.info/plugin-xbmc/tvalacarta</website>
-    <email>tvalacarta@gmail.com</email>
-    <source>https://github.com/tvalacarta/tvalacarta</source>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="login|startup">
   </extension>
 </addon>
 

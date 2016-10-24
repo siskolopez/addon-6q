@@ -1,33 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.addon6q"
-       name="[COLOR gray][B]Addon[COLOR yellow]6q[/B][/COLOR]"
-       version="1.2.1"
-       provider-name="sisko lopez">
-       
+       name="addon6q"
+       version="1.2.2"
+       provider-name="addon6q">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.beautifulsoup" version="3.2.1"/>
     <import addon="script.module.simple.downloader" version="0.9.4"/>
     <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
     <import addon="script.module.requests" />
     <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" />
-    <import addon="plugin.video.youtube" />
-    <import addon="script.module.urlresolver" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
     <import addon="script.module.simplejson" />    
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
+  
+     <extension point="xbmc.addon.repository" name="shani repository">
+        <info compressed="false">https://offshoregit.com/Shani-08/main/addons.xml</info>
+        <checksum>https://offshoregit.com/Shani-08/main/addons.xml.md5</checksum>
+        <datadir zip="true">https://offshoregit.com/Shani-08/main/zips/</datadir>
+    </extension>
+
   <extension point="xbmc.addon.metadata">
-    <summary>addon 6q</summary>
+    <summary>livestreamspro- shamelessly forked from livestreams but added many thinks</summary>
     <description>
-         Add-on exclusivo y gratuito, si lo ves an algún otro lugar... ya sabes... infórmame.
-             
+        Nueva actualización (25-10-2016) 
         
     </description>
     <platform>all</platform>
   </extension>
 </addon>
-

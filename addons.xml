@@ -2,8 +2,8 @@
 <addons>
 <addon id="plugin.video.addon6q"
        name="[COLOR gray][B]Addon[COLOR yellow]6q[/B][/COLOR]"
-       version="1.2.3"
-       provider-name="sisko lopez">
+       version="1.2.2"
+       provider-name="6q">
 
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -34,14 +34,21 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.f4mTester" version="2.6.2" name="f4mTester" provider-name="Shani">
+<addon id="plugin.video.f4mTester" version="2.6.6" name="f4mTester" provider-name="Shani">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.video.F4mProxy" version="2.6.2"/>
+        <import addon="script.video.F4mProxy" version="2.6.6"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
     </extension>
+
+    <extension point="xbmc.addon.repository" name="shani repository">
+        <info compressed="false">https://offshoregit.com/Shani-08/main/addons.xml</info>
+        <checksum>https://offshoregit.com/Shani-08/main/addons.xml.md5</checksum>
+        <datadir zip="true">https://offshoregit.com/Shani-08/main/zips/</datadir>
+    </extension>
+
     <extension point="xbmc.addon.metadata">
         <summary>f4mTester</summary>
         <description></description>
@@ -147,73 +154,34 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.ZemTV-shani"
-       name="Zem"
-       version="5.8.1"
-       provider-name="shani">
+<addon id="plugin.video.tvalacarta"
+    name="tvalacarta"
+    version="4.0.3"
+    provider-name="tvalacarta">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.urlresolver" version="1.0.0"/>
-	<import addon="plugin.video.youtube" version="2.9.2" optional="true"/>
-    <import addon="script.module.simplejson" version="3.3.0"/>
-       	<import addon="script.module.elementtree" version="1.2.8"/>
-
-
-    <import addon="plugin.video.f4mTester" version="2.2.3" optional="true" />
-
   </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
   </extension>
-
-   <extension point="xbmc.addon.repository" name="shani repository">
-        <info compressed="false">https://offshoregit.com/Shani-08/main/addons.xml</info>
-        <checksum>https://offshoregit.com/Shani-08/main/addons.xml.md5</checksum>
-        <datadir zip="true">https://offshoregit.com/Shani-08/main/zips/</datadir>
-    </extension>
-
-
-
-
   <extension point="xbmc.addon.metadata">
-    <summary>Zem Addon for sports and desi contents. Visit TVADDONS.ag for support</summary>
-    <description>Watch Sports and Desi contents on your XBMC. This plugin fetches the video sources from various platforms and locations</description>
-    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with any of the content provider.</disclaimer>
-    <forum>https://forums.tvaddons.ag/shanis-addon-repository/</forum>
-    <email>@shani_08_kodi</email>
+    <summary lang="es">Televisión a la carta</summary>
+    <description lang="es">Para ver la televisión por Internet, a la carta y desde tu media center</description>
+    <summary lang="en">TV on demand (Spanish)</summary>
+    <description lang="en">Watch on demand spanish TV from your media center</description>
     <platform>all</platform>
-
-
+    <license>GNU GPL v3</license>
+    <forum>http://www.mimediacenter.info/foro</forum>
+    <website>http://blog.tvalacarta.info/plugin-xbmc/tvalacarta</website>
+    <email>tvalacarta@gmail.com</email>
+    <source>https://github.com/tvalacarta/tvalacarta</source>
   </extension>
-</addon>
-
-<addon id="program.plexus"
-       name="Plexus"
-       version="0.1.4"
-       provider-name="enen92, TV ADDONS">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.requests" />
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>executable</provides>
-  </extension>
-
-  <extension point="xbmc.addon.metadata">
-    <summary>SopCast and AceStream for Kodi</summary>
-    <description lang="en">Plexus - Any complex structure containing an intricate network of parts. Plexus brings native peer-to-peer support (AceStream and SopCast) for Kodi Entertainment Center for several platforms.[CR][CR]Documentation: (missing)</description>
-    <description lang="pt">Plexus - Uma estrutura complexa constituída por uma rede de partes. O Plexus adiciona suporte peer-to-peer nativo (AceStream e Sopcast) ao Kodi Entertainment Center para várias plataformas.[CR][CR]Documentação: (em falta)</description>
-    <disclaimer lang="en">The author does not host nor distribute any of the content you may watch using this addon. The author has no part in the development of any included technologies. When seeking help in Kodi's forum please respect rules (http://kodi.wiki/view/Forum_rules).</disclaimer>
-    <disclaimer lang="pt">Os autores não alojam nem distribuem nenhum do conteúdo que poderá ser reproduzido a partir deste addon. Os autores não têm qualquer parte no desenvolvimento de qualquer uma das tecnologias. Se procurar ajuda no fórum oficial do Kodi por favor respeite as regras do fórum (http://kodi.wiki/view/Forum_rules).</disclaimer>
-    <forum>http://forums.tvaddons.ag</forum>
-    <platform>all</platform>
+  <extension point="xbmc.service" library="service.py" start="login|startup">
   </extension>
 </addon>
 
 <addon id="repository.Oficial-addon6q" name="addon6q Oficial Repo" version="1.0.2" provider-name="addon6q">
-	<extension point="xbmc.addon.repository" name="addon6q official Repo">
+	<extension point="xbmc.addon.repository" name="BassFox official Repo">
 		<info compressed="false">https://raw.githubusercontent.com/siskolopez/addon-6q/master/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/siskolopez/addon-6q/master/addons.xml.md5</checksum>
                 <datadir zip="true">https://raw.githubusercontent.com/siskolopez/addon-6q/master</datadir>

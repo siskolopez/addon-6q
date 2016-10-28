@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.addon6q"
        name="[COLOR gray][B]Addon[COLOR yellow]6q[/B][/COLOR]"
-       version="1.2.3"
+       version="1.2.4"
        provider-name="sisko lopez">
 
   <requires>

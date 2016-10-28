@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.addon6q"
        name="[COLOR gray][B]Addon[COLOR yellow]6q[/B][/COLOR]"
-       version="1.2.1"
+       version="1.2.3"
        provider-name="sisko lopez">
 
   <requires>
@@ -10,13 +10,15 @@
     <import addon="script.module.beautifulsoup" version="3.2.1"/>
     <import addon="script.module.simple.downloader" version="0.9.4"/>
     <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
     <import addon="script.module.requests" />
     <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" />
-    <import addon="plugin.video.youtube" />
-    <import addon="script.module.urlresolver" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
     <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -24,7 +26,7 @@
   <extension point="xbmc.addon.metadata">
     <summary>addon 6q</summary>
     <description>
-         Add-on exclusivo y gratuito, si lo ves an algún otro lugar... ya sabes... infórmame.
+         Add-on actualizado a fecha : [COLOR yellow]28/10/2016[/COLOR]
 
 
     </description>

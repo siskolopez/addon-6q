@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.addon6q"
        name="[COLOR gray][B]Addon[COLOR yellow]6q[/B][/COLOR]"
-       version="1.2.4a"
+       version="1.2.4b"
        provider-name="6q">
 
   <requires>
@@ -28,7 +28,7 @@
   <extension point="xbmc.addon.metadata">
     <summary>addon 6q</summary>
     <description>
-         Add-on actualizado a fecha : [COLOR yellow]28/10/2016[/COLOR]
+         Add-on actualizado a fecha : [COLOR yellow]09/02/2017[/COLOR]
 
 
     </description>
